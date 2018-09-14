@@ -1,0 +1,19 @@
+digraph "void onReceive(android.content.Context,android.content.Intent)" {
+    label="void onReceive(android.content.Context,android.content.Intent)";
+    node [shape=box];
+    "0" [style=filled,fillcolor=gray,label="$r0 := @this",];
+    "1" [label="$r1 := @parameter0",];
+    "0"->"1";
+    "2" [label="$r2 := @parameter1",];
+    "1"->"2";
+    "3" [label="$r3 = new android.content.Intent",];
+    "2"->"3";
+    "4" [label="specialinvoke $r3.<init>($r1, class \"cn/buding/coupon/core/loaddata/LoadService2\")",];
+    "3"->"4";
+    "5" [label="$r3.putExtras($r2)",];
+    "4"->"5";
+    "6" [label="$r1.startService($r3)",];
+    "5"->"6";
+    "7" [style=filled,fillcolor=lightgray,label="return",];
+    "6"->"7";
+}

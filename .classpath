@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7"/>
+	<classpathentry kind="lib" path="jxl.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/soot6june2016/axml-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/soot6june2016/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/soot6june2016/sootclasses-trunk.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/soot6june2016/soot-infoflow.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/soot6june2016/soot-infoflow-android.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/soot6june2016/sootjavadoc-trunk.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/soot6june2016/sootsources-trunk.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/soot6june2016/soot-trunk.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/eclipse-java-kepler-SR2-win32-x86_64/eclipse/javax.json-api-1.0-javadoc/javax.json-api-1.0-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/eclipse-java-kepler-SR2-win32-x86_64/eclipse/json-20180130.jar"/>
+	<classpathentry kind="lib" path="C:/Ava/android/eclipse-java-kepler-SR2-win32-x86_64/eclipse/json-simple-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
